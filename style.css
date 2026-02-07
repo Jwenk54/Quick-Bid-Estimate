@@ -1,0 +1,178 @@
+* {
+box-sizing: border-box;
+font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0b0f19;
+  color: #e9eefc;
+  display: flex;
+  justify-content: center;
+  padding: 30px 14px;
+}
+
+.app {
+  width: 100%;
+  max-width: 900px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin: 6px 0 0;
+  color: #a8b2d6;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  background: #121a2b;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #cbd6ff;
+}
+
+input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: #0b1020;
+  color: #e9eefc;
+  outline: none;
+}
+
+input:focus {
+  border-color: rgba(120, 160, 255, 0.5);
+}
+
+.btn-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+button {
+  border: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  background: #4a74ff;
+  color: white;
+}
+
+button.secondary {
+  background: #2a3554;
+}
+
+button.danger {
+  background: #ff4a4a;
+}
+
+.total-box {
+  background: #0b1020;
+  border-radius: 12px;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  color: #cbd6ff;
+}
+
+.line strong {
+  color: #ffffff;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin: 10px 0;
+}
+
+.line.total {
+  font-size: 1.2rem;
+}
+
+.saved-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saved-list {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 0;
+  display: grid;
+  gap: 10px;
+}
+.saved-item {
+  background: #0b1020;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saved-item small {
+  color: #9fb0e8;
+  display: block;
+  margin-top: 3px;
+}
+
+.saved-item button {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: 16px;
+  text-align: center;
+  color: #8896c8;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .full {
+    grid-column: 1 / -1;
+  }
+}
